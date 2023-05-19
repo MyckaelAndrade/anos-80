@@ -16,7 +16,7 @@ body{
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    background-color: #303030;
+    background-color: #202020;
 }
 
 #header ul{
@@ -61,18 +61,92 @@ body{
 
 .subtitle{
     color: #fff;
-    font-size: 7vh;
+    font-size: 4vw;
+    margin: 20px;
 }
 
 .txt{
     color: #fff;
-    font-size: 4vh;
-    padding: 0 40px;
+    font-size: 2vw;
     text-align: justify;
     text-indent: 60px;
 }
 
-.-art{
-
+.box{
+    padding: 0 40px;
 }
 
+#footer{
+    display: flex;
+    justify-content: center;
+    background-color: #202020;
+    padding: 30px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    flex-wrap: wrap;
+    width: 15%;
+    height: auto;
+}
+
+.row a, .row p{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.row a:hover{
+    background-color: #ffffff20;
+}
+
+.row ul{
+    list-style: none;
+}
+
+@media (max-width: 900px){
+    #header a{
+        font-size: 6vw;
+    }
+    .title{
+        font-size: 12vw;
+    }
+    .subtitle{
+        text-align: center;
+        font-size: 7vw;
+    }
+    .txt{
+        font-size: 5vw;
+    }
+    .box{
+        padding: 5px;
+    }
+
+    #footer{
+        padding: 0;
+    }
+
+    #container{
+        flex-direction: column;
+    }
+
+    .row{
+        margin: 30px;
+        width: 80%;
+    }
+
+    .row a{
+        font-size: 15px;
+    }
+
+    .row p{
+        text-align: justify;
+        font-size: 15px;
+    }
+}
